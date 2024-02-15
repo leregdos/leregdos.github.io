@@ -4,14 +4,13 @@ body {
     background-color: #57068c;
     color: #FFFFFF;
 }
-
+/* Adding some Padding and Centering the footer content  */
 .footer-container {
     padding-top: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
 }
-
 /* The header should have some padding than the components below and the elements should be at the center */
 header {
     background-color: #57068c;
@@ -20,15 +19,11 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .header-container h1 {
     font-size: 30px;
-    /* font-weight: 900; */
     margin: 0;
 }
-
 /* Centering the slider and hiding other pictures when one is displayed*/
-
 .slider {
     margin-top: 10px;
     display: flex;
@@ -38,14 +33,11 @@ header {
     overflow: hidden;
     background-color: #E5E5E5;
 }
-
 .slide {
     width: 600px;
     display: none; /* Hide all slides by default */
 }
-
 /* The previous, next slideshow buttons */
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -67,7 +59,6 @@ header {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
-
 /* The even distancing between the two pointer buttons */
 .next {
     right: 0;
@@ -83,4 +74,99 @@ header {
 
 .prev:hover {
     padding-right: 13px; /* Add padding to the left on hover */
+}
+
+/* A row class that can be reused to present items in a row */
+.row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+/* A column class that can be reused to present items in each row */
+.column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 10px;
+}
+/* Making image size responsive */
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+/* Centering the image block */
+.image-block {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+/* Making the text block more spaced between the lines and left aligned*/
+.text-block p{
+    text-align: left;
+    font-size: medium;
+    line-height: 30px;
+}
+/* This div stores the title of the section and the following component, so it should
+be stacked as a column while centering the elements */
+.section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* This row adds upon the row defined above to present specifically the crew part */
+/* It allows items to wrap on smaller screens and adds space between each crew member while preserving the same line */
+.crew.row {
+    flex-wrap: wrap; 
+    gap: 20px;
+    align-items: stretch;
+}
+/* This is the style for each crew member card*/
+/* It adds a white background, padding, margin, shadow, and rounded corners */
+/* It also stacks the items vertically and centers them horizontally */
+.crew-member {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px; 
+}
+/* This class rounds the picture of each crew member */
+.crew-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Adds space below the image */
+}
+/* The name of each crew member should be different than other h3 elements due to its black color */
+.crew-member h3 {
+    margin: 10px 0; /* Adds space above and below the heading */
+    color: #000;
+}
+/* The introduction of each crew member should be center aligned and black colored while adding some nice line height*/
+.crew-member p {
+    text-align: center;
+    color: #000;
+    line-height: 30px;
+    margin: 10px;
+}
+/* Seting the video's aspect ratio, centering the video, and making the width and height responsive */
+.video-container {
+    --aspect-ratio: 30.25%;
+    position: relative;
+    width: 100%; 
+    max-width: 800px;
+    margin: auto;
+    padding-top: var(--aspect-ratio);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

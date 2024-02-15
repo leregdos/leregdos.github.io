@@ -8,9 +8,9 @@ function moveSlide(n) {
 function showSlide(n) {
   const slides = document.getElementsByClassName("slide");
   if (n >= slides.length) {
-    slideIndex = 1;
+    slideIndex = 0;
   }
-  if (n < 1) {
+  if (n < 0) {
     slideIndex = slides.length - 1;
   }
   for (let i = 0; i < slides.length; i++) {
