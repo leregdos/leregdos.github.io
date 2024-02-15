@@ -1,101 +1,86 @@
+/* setting the font family for all body text and adding NYU purple as background color */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #57068c;
+    color: #FFFFFF;
 }
+
+.footer-container {
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 /* The header should have some padding than the components below and the elements should be at the center */
 header {
-    background-color: #f3f3f3;
+    background-color: #57068c;
     padding: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
 }
-/* This makes the header elements appear in a row */
-.logo-container {
-    display: flex;
-    align-items: center; 
-    gap: 20px;
-}
-/* Making the image smaller than the original size */
-.logo-container img {
-    height: 50px;
-}
-/* So that it appears more compact */
-.logo-container h1 {
+
+.header-container h1 {
+    font-size: 30px;
+    /* font-weight: 900; */
     margin: 0;
 }
 
-/* These are various styles of the Roboto font that are used on this website */
-/* Taken from Google Fonts */
+/* Centering the slider and hiding other pictures when one is displayed*/
 
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+.slider {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-color: #E5E5E5;
+}
+
+.slide {
+    width: 600px;
+    display: none; /* Hide all slides by default */
+}
+
+/* The previous, next slideshow buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height to match the width because this is a circle */
+    padding: 5px;
+    margin: 0px 15px 0px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease-out;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border-width: 0px;
+    border-radius: 50%; /* Make it round */
+    display: flex; /* Use flexbox to center the arrow */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* The even distancing between the two pointer buttons */
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+/* The cool effect that makes the buttons more interactive when the user hovers over it */
+.next:hover {
+    padding-left: 13px; /* Add padding to the left on hover */
+}
+
+.prev:hover {
+    padding-right: 13px; /* Add padding to the left on hover */
+}

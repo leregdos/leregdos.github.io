@@ -11,18 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- The header should contain a logo and the title of the webpage -->
+    <!-- The header contains an opening question -->
     <header>
-        <div class="logo-container">
-            <img src="assets/logo.jpg" alt="Campus Cats Logo">
-            <h1>Finding Campus Cats</h1>
+        <div class="header-container">
+            <h1>How Many Campus Cats Can You Find?</h1>
         </div>
     </header>
-    <div>
-        <img src="http://placehold.it/600x400" alt="Slide 1">
-        <p>An honest exposé of our feline friends on campus</p>
+    <div class="slider">
+        <img src="/assets/slider/IMG_0617 (1).png" alt="Slide 1" class="slide">
+        <img src="/assets/slider/IMG_0633.jpg" alt="Slide 2" class="slide">
+        <img src="/assets/slider/IMG_0635.jpg" alt="Slide 3" class="slide">
+        <img src="/assets/slider/IMG_0636.jpg" alt="Slide 4" class="slide">
+        <img src="/assets/slider/IMG_1846_Original.jpg" alt="Slide 5" class="slide">
+        <button class="prev" onclick="moveSlide(-1)"><span>&#10094;</span></button>
+        <button class="next" onclick="moveSlide(1)"><span>&#10095;</span></button>
     </div>
-    <div>
+    <p>An honest exposé of our feline friends on campus</p>
+    <!-- <div>
         <img src="http://placehold.it/300x250" alt="Screenshot">
         <p>Story Overview</p>
         <p>Given a short timeframe of 30 minutes, we embarked on a delightful mission to discover as many of our cherished 
@@ -48,10 +53,14 @@
         <img src="http://placehold.it/200x150" alt="Whiskers">
         <img src="http://placehold.it/200x150" alt="Simba">
         <img src="http://placehold.it/200x150" alt="Cheesus">
-    </div>
+    </div> -->
     <footer>
-        <p>© NYUAD 2024</p>
-        <a href="https://www.freepik.com/free-vector/black-cat-background_1211228.htm#query=cat%20logo&position=9&from_view=keyword&track=ais&uuid=7fec5c79-3d48-4a97-8a66-350fed94f34f">Logo Image by winkimages</a> on Freepik
+        <div class = "footer-container">
+            <p>© NYUAD 2024</p>
+        </div>
     </footer>
+    <!-- linking the javascript file, it's placed at the bottom so that the code is not
+    running before all the elements load -->
+    <script src="script.js"></script>
 </body>
 </html>
