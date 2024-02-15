@@ -14,7 +14,13 @@ p, h1, h2, h3{
     padding-top: 10px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+/* Adding the custom cursor for the href element in the footer while also setting the correct color */
+.footer-container a {
+    color: #FFFFFF;
+    cursor: url('/assets/Alternate\ Select\ Kawaii\ Kitty2.cur'), auto; /* kitty cursor, fallback to default if this one fails*/
 }
 /* The header should have some padding than the components below and the elements should be at the center */
 header {
@@ -44,7 +50,7 @@ header {
 }
 /* The previous, next slideshow buttons */
 .prev, .next {
-    cursor:  url('/assets/Alternate\ Select\ Kawaii\ Kitty2.cur'), auto; /* kitty cursor, fallback to default if this one fails*/;
+    cursor:  url('/assets/Handwriting\ Kawaii\ Kitty.cur'), auto; /* kitty cursor, fallback to default if this one fails*/;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
