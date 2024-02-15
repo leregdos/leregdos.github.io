@@ -11,25 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- The header contains an opening question -->
+    <!-- Header section with the main question -->
     <header>
         <div class="header-container">
             <h1>How Many Campus Cats Can You Find?</h1>
         </div>
     </header>
-    <!-- This slider contains the slider images and the next, previous buttons -->
+    <!-- Slider section with images and navigation buttons -->
     <div class="slider">
+        <!-- Each image is a slide, with alt text for accessibility -->
         <img src="/assets/slider/IMG_0617 (1).png" alt="Slide 1" class="slide">
         <img src="/assets/slider/IMG_0633.jpg" alt="Slide 2" class="slide">
         <img src="/assets/slider/IMG_0635.jpg" alt="Slide 3" class="slide">
         <img src="/assets/slider/IMG_0636.jpg" alt="Slide 4" class="slide">
         <img src="/assets/slider/IMG_1846_Original.jpg" alt="Slide 5" class="slide">
+        <!-- Navigation buttons with onclick event handlers for sliding -->
         <button class="prev" onclick="moveSlide(-1)"><span>&#10094;</span></button>
         <button class="next" onclick="moveSlide(1)"><span>&#10095;</span></button>
     </div>
+    <!-- Row section for poster and story overview -->
     <div class="row">
         <div class="column image-block">
-            <img src="/assets/IMG_0630.jpg" alt="Outside Library">
+            <img src="/assets/IMG_0630.jpg" alt="Poster">
         </div>
         <div class="column text-block">
             <h2>Story Overview</h2>
@@ -39,8 +42,10 @@
                 creatures through the short film we made.</p>
         </div>
     </div>
+    <!-- Section for showcasing the film crew -->
     <div class="section">
         <h2>Film Crew</h2>
+        <!-- Each crew member's details, including an image, name, and a short bio -->
         <div class="crew row">
             <div class="crew-member column">
                 <img src="/assets/crew/ayush_image.jpeg" alt="Aayush Pandey">
@@ -61,12 +66,14 @@
             </div>
         </div>
     </div>
+     <!-- Section for embedding the film from YouTube -->
     <div class="section">
         <h2>Watch the Film</h2>
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/OPfQHdz8qE0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+    <!-- Section to introduce the cast members -->
     <div class="section">
         <h2>Meet the Talented Cast</h2>
         <div class="crew row">
@@ -98,6 +105,7 @@
             </div>
         </div>
     </div>
+    <!-- Footer with copyright notice and custom cursor credit -->
     <footer>
         <div class = "footer-container">
             <p>Custom Cursor by <a href="http://www.rw-designer.com/cursor-set/kawaiikittymd#google_vignette">ツ☪ NaLexnu</a></p>

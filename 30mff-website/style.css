@@ -182,7 +182,7 @@ be stacked as a column while centering the elements */
     height: 100%;
 }
 
-
+/* To display each cast member with their names */
 .cast-member {
     display: flex;
     flex-direction: column; /* Stacks elements vertically */
@@ -190,6 +190,7 @@ be stacked as a column while centering the elements */
     padding: 10px;
     margin: 10px;
 }
+/* To make each cast member's picture rounded */
 .cast-member img {
     width: 300px;
     height: 300px;
