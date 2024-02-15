@@ -24,7 +24,6 @@ p, h1, h2, h3{
 }
 /* The header should have some padding than the components below and the elements should be at the center */
 header {
-    background-color: #57068c;
     padding: 20px;
     text-align: center;
     display: flex;
