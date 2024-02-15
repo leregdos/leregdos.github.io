@@ -1,8 +1,13 @@
-/* setting the font family for all body text and adding NYU purple as background color */
+/* setting the font family for all body text and adding NYU purple as background color
+while also adding custom cursor */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #57068c;
+    cursor: url('/assets/Normal\ Select\ Kawaii\ Kitty.cur'), auto; /* kitty cursor, fallback to default if this one fails*/
     color: #FFFFFF;
+}
+p, h1, h2, h3{
+    cursor: url('/assets/Text\ Select\ Kawaii\ Kitty.cur'), auto; /* kitty cursor, fallback to default if this one fails*/
 }
 /* Adding some Padding and Centering the footer content  */
 .footer-container {
@@ -39,7 +44,7 @@ header {
 }
 /* The previous, next slideshow buttons */
 .prev, .next {
-    cursor: pointer;
+    cursor:  url('/assets/Alternate\ Select\ Kawaii\ Kitty2.cur'), auto; /* kitty cursor, fallback to default if this one fails*/;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
