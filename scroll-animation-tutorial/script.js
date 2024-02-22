@@ -34,9 +34,9 @@ function scrollPage() {
 // An array of stories as strings
 let stories = [
   "Hello!",
-  "I am a cat, your storyteller.",
-  "I am here to help you understand the world",
-  "It is a fictional world, but a world nonetheless.",
+  "Because I'm a cat, people treat me with dairy.",
+  "But did you know that I am actually lactose intolerant?",
+  "So next time I look hungry, don't feed me dairy!",
 ];
 
 let catDiv = document.getElementById("cat-div");
