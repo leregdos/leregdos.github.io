@@ -67,9 +67,9 @@ Cat Div
 }
 
 /* 
-Parallax: Mountain and Ocean sections;
+Parallax: Home section;
 */
-#mountain, #ocean{
+#home, #vet{
 	/* Set height of div to 100% */
 	height: 100%;
 	/* The bottom three background CSS settings create parallax effect */
@@ -78,60 +78,50 @@ Parallax: Mountain and Ocean sections;
 	background-position: center;
 }
 
-#mountain{
-	/* Set background image of mountain section using url() function */
-	background-image: url('img/mountain.jpg');
+#home{
+	/* Set background image of home section using url() function */
+	background-image: url('img/home.jpg');
 }
 
-#ocean{
-	/* Set background image of ocean section using url() function */
-	background-image: url('img/ocean.jpg');
+#vet{
+	/* Set background image of vet section using url() function */
+	background-image: url('img/vet.jpeg');
 }
 
 /* 
-Flower div inside Mountain section
+Cat food div inside home section
 */
-#flower-div{
+#cat-food-div{
     position: relative;
-    width: 150px;
+    width: 300px;
     text-align: center;
     top: calc(100% - 300px);
     left: calc(50% - 75px);
 }
 
-#flower{
-	width: 100px;
+#cat-food{
+	width: 250px;
 	margin-top: 25px;
 }
-
-#flower-text{
-	color: white;
-}
-
 /* 
-Fish div inside Ocean section
+Milk div inside Vet section
 */
-#fish-div{
+#milk-div{
     position: relative;
-    width: 180px;
+    width: 360px;
     text-align: center;
     left: calc(50% - 90px);
 }
 
-#fish-text{
-	color: black;
-	background: white;
-}
-
-#fish{
-    width: 75px;
+#milk{
+    width: 300px;
     display: block;
     margin: auto;
     transform: rotate(-10deg);
 }
 
 /* 
-Text sections after Mountain and Ocean sections
+Text sections after Home and Vet sections
 */
 .text-section{
 	/* Center text in the middle of browser using flexbox */
@@ -142,5 +132,6 @@ Text sections after Mountain and Ocean sections
 }
 
 .text{
+	font-size: large;
 	width: 70%;
 }

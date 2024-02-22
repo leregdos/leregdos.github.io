@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comic Demo</title>
+	<title>Feed The Cat!</title>
 	<link href="style.css" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -11,47 +11,38 @@
 	<!-- Navigation bar -->
 	<div id="nav">
 		<!-- link to divs on the same page using their id names -->
-		<a href="#mountain"><div class="nav-btn" id="first-page"></div></a>
+		<a href="#home"><div class="nav-btn" id="first-page"></div></a>
 		<a href="#first-text"><div class="nav-btn" id="second-page"></div></a>
-		<a href="#ocean"><div class="nav-btn" id="third-page"></div></a>
+		<a href="#vet"><div class="nav-btn" id="third-page"></div></a>
 		<a href="#second-text"><div class="nav-btn" id="fourth-page"></div></a>
 	</div>
-	<!-- 
-	Four full browser size sections:
-	1. Mountain
-	2. Text section
-	3. Ocean
-	4. Text section
-	 -->
-	<div id="mountain">
+	<div id="home">
 		<!-- Content to display inside the mountain div -->
-		<div id="flower-div" data-aos="fade-up"
+		<div id="cat-food-div" data-aos="fade-up"
 		data-aos-duration="800"
 		data-aos-easing="ease-in-out"
 		data-aos-mirror="true"
 		data-aos-once="false"
 		data-aos-anchor-placement="top-center">
-			<span id="flower-text">Going up and up.</span>
-			<img id="flower" src="img/flower.png">
+			<img id="cat-food" src="img/whiskas.png">
 		</div>
 	</div>
 	<div id="first-text" class="text-section">
-		<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer feugiat scelerisque. Amet justo donec enim diam vulputate ut. Elit eget gravida cum sociis natoque penatibus et magnis dis. Porttitor massa id neque aliquam.</p>
+		<p class="text">
+			Feeding your cat with cat food ensures they receive the proper balance of nutrients essential for their health, including taurine, which is crucial for heart and eye health and not found in adequate amounts in non-cat foods. Cat food is specifically formulated to match the dietary requirements of felines, who have unique needs different from humans and other pets. </p>
 	</div>
-	<div id="ocean">
+	<div id="vet">
 		<!-- Content to display inside the ocean div -->
-		<div id="fish-div" data-aos="fade-down"
+		<div id="milk-div" data-aos="fade-down"
 		data-aos-duration="800"
 		data-aos-easing="ease-in-out"
 		data-aos-once="false"
 		data-aos-anchor-placement="top-center">
-			<img id="fish" src="img/fish.png">
-			<span id="fish-text">Fish swiming and swiming</span>
+			<img id="milk" src="img/milk.png">
 		</div>
 	</div>
 	<div id="second-text" class="text-section">
-		<p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Ut diam quam nulla porttitor massa id. Libero enim sed faucibus turpis in eu mi bibendum neque. Sed risus pretium quam vulputate dignissim suspendisse. Amet tellus cras adipiscing enim. Mollis aliquam ut porttitor leo a diam. 
-		</p>
+		<p class="text">Many cats are lactose intolerant, meaning they lack the enzyme needed to digest lactose in dairy products, leading to digestive upset, diarrhea, and discomfort. Dairy products, contrary to popular belief, do not provide any essential nutrients that cats cannot obtain from a balanced, meat-based diet. Regularly giving dairy to cats can also contribute to unnecessary weight gain and associated health issues, due to its high calorie and fat content. </p>
 	</div>
 	<!-- Cat div position is fixed on the bottom left corner of the web page -->
 	<div id="cat-div">
