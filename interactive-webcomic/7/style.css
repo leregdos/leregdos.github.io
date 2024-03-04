@@ -1,0 +1,19 @@
+body {
+    background-image: url('../assets/cloudySky.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default margin */
+}
+
+#comic-container {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+#panel {
+    max-width: 90%;
+    max-height: 80vh; 
+    margin: auto; /* Additional centering for the image */
+}
