@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../navbuttons.css"> 
+    <link rel="stylesheet" href="../soundButton.css">
     <!-- including p5.js and p5.js sound -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spirit Mountain - Page 6</title>
+    <title>Spirit Mountain - Page 5</title>
 </head>
 <body>
       <div class="canvas-container">
+        <button id="sound-button" class="sound-button" onclick="toggleSound()">
+          <img src="../assets/play.png" alt="Play" class="sound-icon-play" id="sound-icon-play" style="display: none;">
+          <img src="../assets/mute.png" alt="Mute" class="sound-icon-mute" id="sound-icon-mute">
+        </button>
         <div id="p5-canvas"></div> 
         <!-- Dimmer overlay -->
         <div id="dim-overlay"></div>
@@ -19,8 +25,10 @@
         <img src="5ABD.gif" id="thunder-gif2">
         <img src="5ABD.gif" id="thunder-gif3">
         <img src="text.png" id="text">
-      </div>
-      
-    <script src="script.js"></script>
+        <button class="prev" onclick="changePage(-1)"><span>&#10094;</span></button>
+        <button class="next" onclick="changePage(1)"><span>&#10095;</span></button>
+    </div>
+    <script type="text/javascript" src="../changePage.js"></script>
+    <script type="text/javascript" src="script.js"></script>    
 </body>
 </html>

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spirit Mountain - Page 3</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="../navbuttons.css"> 
 </head>
 <body>
     <div id="comic-container">
-        <video src="3.mp4" autoplay loop muted id="video-panel"></video>
+        <img src="3.jpg" alt="Page 3" id="panel">
+        <button class="prev" onclick="changePage(-1)"><span>&#10094;</span></button>
+        <button class="next" onclick="changePage(1)"><span>&#10095;</span></button>
     </div>
+    <script type="text/javascript" src="../changePage.js"></script>
 </body>
 </html>

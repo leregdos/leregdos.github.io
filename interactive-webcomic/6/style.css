@@ -1,5 +1,5 @@
 body {
-    background-image: url('../assets/cloudySky.jpg');
+    background-image: url('../assets/darkSky.jpg');
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the background image */
     margin: 0; /* Remove default margin */
@@ -13,7 +13,8 @@ body {
 }
 
 #panel {
-    max-width: 90%;
-    max-height: 80vh; 
+    max-width: 95%;
+    max-height: 85vh; 
     margin: auto; /* Additional centering for the image */
 }
+
