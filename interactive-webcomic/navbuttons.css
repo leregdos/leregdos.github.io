@@ -1,0 +1,38 @@
+/* The previous, next slideshow buttons */
+.prev, .next {
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height to match the width because this is a circle */
+    padding: 5px;
+    margin: 0px 15px 0px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease-out;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border-width: 0px;
+    border-radius: 50%; /* Make it round */
+    display: flex; /* Use flexbox to center the arrow */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* The even distancing between the two pointer buttons */
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+/* The cool effect that makes the buttons more interactive when the user hovers over it */
+.next:hover {
+    padding-left: 13px; /* Add padding to the left on hover */
+}
+
+.prev:hover {
+    padding-right: 13px; /* Add padding to the left on hover */
+}

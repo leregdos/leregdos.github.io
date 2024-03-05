@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spirit Mountain</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbuttons.css">
+    <link rel="stylesheet" href="soundButton.css">
 </head>
 <body>
-    <div></div>
+    <button id="sound-button" class="sound-button" onclick="toggleSound()">
+        <img src="assets/play.png" alt="Play" class="sound-icon-play" id="sound-icon-play" style="display: none;">
+        <img src="assets/mute.png" alt="Mute" class="sound-icon-mute" id="sound-icon-mute">
+    </button>    
+    <div class="hero">
+        <div class="spirit-mountain">
+            <img src="assets/Spirit.svg" alt="Spirit" class="spirit">
+            <img src="assets/Mountain.svg" alt="Mountain" class="mountain">
+          </div>
+          <!-- <a target="_blank" href="https://icons8.com/icon/TbUAUWRV03kQ/mute">Mute</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+        <video class="video-bg" autoplay muted loop>
+            <source src="assets/BackgroundVid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Next Page -->
+    <button class="next" onclick="changePage(1)"><span>&#10095;</span></button>
+    <script src="script.js"></script>
+    <script src="changePage.js"></script>
 </body>
 </html>

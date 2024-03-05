@@ -13,7 +13,7 @@ body {
 }
 
 #panel {
-    max-width: 90%;
-    max-height: 80vh; 
+    max-width: 95%;
+    max-height: 85vh; 
     margin: auto; /* Additional centering for the image */
 }
