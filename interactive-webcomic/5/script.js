@@ -2,6 +2,13 @@ let raindrops = [];
 let lightningFrame = 0; // Frame when the last lightning happened
 const lightningInterval = 60 * 5; // Minimum interval between lightnings, in frames (e.g., 5 seconds at 60 fps)
 
+let rainSound, thunderSound;
+
+function preload() {
+  rainSound = loadSound("rainSound.mp3");
+  thunderSound = loadSound("thunderSound.mp3");
+}
+
 class Raindrop {
   constructor() {
     this.x = random(width);
@@ -35,6 +42,7 @@ function setup() {
   cnv.parent("p5-canvas");
   cnv.style("background-color", "transparent"); // Make the canvas background transparent
   cnv.style("display", "block"); // Ensures the canvas fills the entire screen without any default margins
+  rainSound.loop(0, 1, 0.5); // Start playing the rain sound in a loop at half volume
 
   for (let i = 0; i < 500; i++) {
     raindrops.push(new Raindrop());
@@ -51,6 +59,8 @@ function draw() {
   }
   // Thunder logic with frame count
   if (frameCount - lightningFrame > lightningInterval && random(1) < 0.03) {
+    thunderSound.play(); // Play the thunder sound once at full volume
+
     // Trigger lightning effect
     document.getElementById("dim-overlay").style.display = "block";
     document.getElementById("thunder-gif1").style.display = "block";
