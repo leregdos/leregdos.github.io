@@ -6,13 +6,21 @@
     <title>Spirit Mountain - Page 13</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="../navbuttons.css"> 
+    <link rel="stylesheet" href="../soundButton.css">
+
 </head>
 <body>
+    <button id="sound-button" class="sound-button" onclick="toggleSound()">
+        <img src="../assets/play.png" alt="Play" class="sound-icon-play" id="sound-icon-play" style="display: none;">
+        <img src="../assets/mute.png" alt="Mute" class="sound-icon-mute" id="sound-icon-mute">
+    </button>
     <div id="comic-container">
         <img src="11.jpg" alt="Page 13" id="panel">
         <button class="prev" onclick="changePage(-1)"><span>&#10094;</span></button>
         <button class="next" onclick="changePage(1)"><span>&#10095;</span></button>
     </div>
     <script type="text/javascript" src="../changePage.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
