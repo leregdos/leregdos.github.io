@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../navbuttons.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spirit Mountain - Page 20</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="../navbuttons.css"> 
+    <title>Spirit Mountain - Page 20 - Use Your Mouse!</title>
 </head>
 <body>
-    <div id="comic-container">
-        <img src="19.PNG" alt="Page 20" id="panel">
+      <div class="canvas-container">
+        <div id="p5-canvas"></div> 
+        <img src="text.PNG" id="text">
         <button class="prev" onclick="changePage(-1)"><span>&#10094;</span></button>
         <button class="next" onclick="changePage(1)"><span>&#10095;</span></button>
-    </div>
-    <script type="text/javascript" src="../changePage.js"></script>
+      </div>
+      
+    <script src="script.js"></script>
+    <script src="../changePage.js"></script>
+
 </body>
 </html>

@@ -1,20 +1,32 @@
+#cloud-1 {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    /* width: 30%;  */
+    /* height: auto;  */
+}
+
+#text {
+    position: absolute; 
+    top: 60%; 
+    left: 30%; 
+    width: 40%; 
+    height: auto; 
+}
+
 body {
-    background-image: url('../assets/darkSky.jpg');
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    margin: 0; /* Remove default margin */
+    background-image: url('../assets/clearSky.jpg');
 }
 
-#comic-container {
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    width: 100%;
+    height: 100%;
+    cursor: url('wind.cur'), auto;
 }
 
-#panel {
-    max-width: 95%;
-    max-height: 85vh; 
-    margin: auto; /* Additional centering for the image */
-}
-
+.canvas-container {    
+    display: block;
+  }
