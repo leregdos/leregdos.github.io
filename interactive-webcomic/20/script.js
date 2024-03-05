@@ -3,6 +3,7 @@ let cloudImgs = [];
 let clouds = [];
 let scale;
 let brightness = 0;
+const nextButton = document.getElementById("next-button");
 
 function preload() {
   clearSkyImg = loadImage("rainbowVillage.png");
@@ -94,6 +95,12 @@ function draw() {
     cloud.move();
     cloud.display(x, x + scaledWidth);
   });
+  // If all clouds are off-screen, display the "Next" button
+  if (brightness >= 100) {
+    nextButton.style.display = "block";
+  } else {
+    nextButton.style.display = "none";
+  }
 }
 
 function windowResized() {
