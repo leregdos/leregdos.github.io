@@ -30,3 +30,28 @@ html, body {
 .canvas-container {    
     display: block;
   }
+
+.overlay {
+    position: fixed;
+    top: 15%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure text appears above the video */
+} 
+
+.text-box {
+    background-color: #fff; /* White background for the text box */
+    padding: 20px; 
+    border-radius: 20px; /* add rounded corners to the text box */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add a shadow to the text box */
+}
+
+#instruction {
+    margin: 0;
+    font-size: 1.3em; 
+    color: #111;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Use Comic Sans */
+    font-weight: 200;
+}
