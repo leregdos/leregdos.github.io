@@ -1,0 +1,59 @@
+html {
+  /* Set height of the html page to 100% of the browser height */
+  height: 100%;
+  /* Hide horizontal scroll */
+  overflow-x: hidden;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  /* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+  height: 100%;
+  margin: 0px;
+}
+
+#home,
+#vet {
+  /* Set height of div to 100% */
+  height: 100%;
+  /* The bottom three background CSS settings create parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("img/black.jpeg");
+}
+
+/* 
+Text sections after Home and Vet sections
+*/
+.text-section {
+  /* Center text in the middle of browser using flexbox */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: large;
+  width: 70%;
+}
+
+#candles-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* This makes the container span the full width of the viewport */
+  text-align: center; /* This centers the candle images within the container */
+  padding: 5px 5px; /* This adds some padding above and below the candles */
+}
+
+.candle {
+  width: 5%; /* Adjust the width percentage so all candles fit on one line */
+  height: auto; /* Maintains the aspect ratio of the candles */
+  margin: 0.2%; /* Adds some space between the candles */
+}
+
+#content {
+  min-height: 150vh; /* This ensures that the content area is at least 1.5 times the height of the viewport, creating a need to scroll */
+}
