@@ -57,3 +57,26 @@ Text sections after Home and Vet sections
 #content {
   min-height: 150vh; /* This ensures that the content area is at least 1.5 times the height of the viewport, creating a need to scroll */
 }
+
+#intro {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("img/intro.jpg") center/cover no-repeat;
+}
+
+#intro h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #fff; /* Adjust based on your background */
+}
+
+#startButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
