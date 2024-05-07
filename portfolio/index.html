@@ -55,12 +55,10 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">Hello!</span>
-                <span class="down">I am Sonny Mandakhnaran</span>
+                <span class="up">Hello, I am</span>
+                <span class="down">Sonny Mandakhnaran</span>
             </h1>
-            <p class="header-subtitle">Incoming Graduate from New York University Abu Dhabi</p>
-
-            <button class="btn btn-primary" id="viewProjectsBtn">View Projects</button>
+            <p class="header-subtitle">Computer Science Student at New York University Abu Dhabi</p>
         </div>
     </header><!-- end of page header -->
 
@@ -151,11 +149,11 @@
     </section><!-- end of skills section -->
 
 
-    <!-- pricing section -->
+    <!-- qualities section -->
     <section class="section" id="pricing">
         <div class="container text-center">
-            <p class="section-subtitle">How Much I Charge ?</p>
-            <h6 class="section-title mb-6">My Pricing</h6>
+            <p class="section-subtitle">What am I bringing to the table ?</p>
+            <h6 class="section-title mb-6">Soft Skills</h6>
             <!-- row -->
             <div class="pricing-wrapper">
                 <div class="pricing-card">
@@ -287,7 +285,7 @@
                     <p class="m-0 text-light">Always excited to hear about new opportunities!</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button onclick="window.location.href='#contact';" class="btn btn-lg my-font btn-light rounded">Contact Me</button>
+                    <button id="contactButtonAlt" class="btn btn-lg my-font btn-light rounded">Contact Me</button>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -412,11 +410,6 @@
     <script src="assets/js/meyawo.js"></script>
     <script>
         $(document).ready(function() {
-            $('#portfolioButton').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#portfolio').offset().top  // Scrolls to the 'portfolio' section
-                }, 890);  // Scroll duration in milliseconds
-            });
             $('#viewProjectsBtn').click(function() {
                 $('html, body').animate({
                     scrollTop: $('#portfolio').offset().top  // Scrolls to the 'portfolio' section
@@ -443,6 +436,11 @@
                 }, 890);  // Scroll duration in milliseconds
             });
             $('#contactButton').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#contact').offset().top  // Scrolls to the 'portfolio' section
+                }, 890);  // Scroll duration in milliseconds
+            });
+            $('#contactButtonAlt').click(function() {
                 $('html, body').animate({
                     scrollTop: $('#contact').offset().top  // Scrolls to the 'portfolio' section
                 }, 890);  // Scroll duration in milliseconds

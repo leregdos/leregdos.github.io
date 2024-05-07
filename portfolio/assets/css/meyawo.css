@@ -12553,6 +12553,7 @@ pre .code {
 }
 
 .header-subtitle {
+  text-align: center;
   font-size: 20px;
   letter-spacing: 2px;
   opacity: 0.8;
@@ -12571,6 +12572,7 @@ pre .code {
 }
 
 .header-title {
+  text-align: center;
   font-size: 2.4rem;
   font-weight: bold;
   opacity: 0.8;
