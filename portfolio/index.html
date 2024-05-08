@@ -83,7 +83,7 @@
                         culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum
                         expedita aliquid! Debitis, nam!
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" id="cvButton">Download CV</button>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -444,6 +444,9 @@
                 $('html, body').animate({
                     scrollTop: $('#contact').offset().top  // Scrolls to the 'portfolio' section
                 }, 890);  // Scroll duration in milliseconds
+            });
+            $('#cvButton').click(function() {
+                window.open("https://leregdos.github.io/Sodgerel%20Mandakhnaran.pdf", "_blank");
             });
         });
         </script>
