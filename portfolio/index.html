@@ -56,7 +56,10 @@
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">Hello, I am</span>
-                <span class="down">Sonny Mandakhnaran</span>
+                <div class="typewriter">
+                    <span id="firstName" class="line">Sonny</span><br>
+                    <span id="lastName" class="line">Mandakhnaran</span>
+                </div>
             </h1>
             <p class="header-subtitle">Computer Science Student at New York University Abu Dhabi</p>
         </div>
@@ -409,6 +412,34 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function typeEffect(element, speed) {
+                let text = element.innerHTML;
+                element.innerHTML = "";
+                element.style.opacity = "1"; // Make the element visible
+                let i = 0;
+                let timer = setInterval(function() {
+                    if (i < text.length) {
+                        element.append(text.charAt(i));
+                        i++;
+                    } else {
+                        clearInterval(timer);
+                        element.style.borderRight = "none"; // Hide cursor after typing
+                    }
+                }, speed);
+            }
+        
+            const firstName = document.getElementById("firstName");
+            const lastName = document.getElementById("lastName");
+            typeEffect(firstName, 200); // Speed of typing each character
+        
+            setTimeout(() => {
+                lastName.style.borderRight = "3px solid black"; // Make cursor visible again for lastName
+                typeEffect(lastName, 200);
+            }, firstName.textContent.length * 200 + 1000); // Delay before starting lastName
+        });
+    </script>
+    <script>
         $(document).ready(function() {
             $('#portfolioButton').click(function() {
                 $('html, body').animate({
@@ -449,7 +480,7 @@
                 window.open("https://leregdos.github.io/Sodgerel%20Mandakhnaran.pdf", "_blank");
             });
         });
-        </script>
+    </script>
         
 
 </body>
