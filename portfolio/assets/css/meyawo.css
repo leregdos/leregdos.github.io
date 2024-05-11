@@ -12722,3 +12722,40 @@ pre .code {
     border-color: black;
   }
 }
+
+.contact-title {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1500)));
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  margin-top: 10px; /* Adds some space between the title and the icons */
+  padding: 0;
+}
+
+.social-media .link {
+  display: inline-block;
+  margin: 0 10px; /* Adds horizontal spacing between buttons */
+  width: 40px; /* Width of each icon */
+  height: 40px; /* Height of each icon */
+  border-radius: 50%; /* Makes the buttons round */
+  background-color: #fff;
+  color: #555; /* Icon color, adjust as needed */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-media .link i {
+  color: #b636ff;
+  font-size: 20px; /* Icon size, adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .social-media .link {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
