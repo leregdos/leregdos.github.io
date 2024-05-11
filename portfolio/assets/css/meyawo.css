@@ -12526,10 +12526,12 @@ pre .code {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 550px;
+  /* max-width: 550px; */
 }
 
 .header .header-content .header-title .up {
+  text-align: center;
+  width: 100%;
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600)));
   font-weight: 200;
   margin-bottom: 5px;
@@ -12693,17 +12695,22 @@ pre .code {
   text-align: center; /* Centers the content */
 }
 
+.typewriter {
+  text-align: center; /* Centers inline-block elements horizontally */
+  width: 100%; /* Takes full width of the header-content */
+}
+
 .typewriter .line {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1500)));
+  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / 1500));
   color: #000;
-  margin-bottom: 0;
-  display: inline-block;
-  white-space: nowrap;
+  margin: 0 auto; /* Auto margins center block-level elements */
+  display: inline-block; /* Makes the line a block element */
   overflow: hidden;
+  white-space: nowrap; /* Keeps text on a single line */
   border-right: 3px solid black; /* Typewriter cursor */
   padding-right: 5px; /* Space for cursor */
   box-sizing: border-box;
-  opacity: 0; /* Start them as invisible */
+  opacity: 0; /* Start as invisible */
 }
 
 @keyframes blink-caret {
