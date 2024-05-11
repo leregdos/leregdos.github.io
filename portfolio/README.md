@@ -6,7 +6,7 @@ Sonny Mandakhnaran: Portfolio
 
 ### Project Description
 
-This portfolio website is a personal project designed to showcase my diverse interests and skills in software development, theater, and interactive media. My goal was to create a professional yet engaging online presence that reflects my personality and professional capabilities.
+This portfolio website is a project designed to showcase my diverse interests and skills in software development, theater, physical wellness and interactive media. My goal was to create a professional yet engaging online presence that reflects my personality and professional capabilities.
 
 ### Process
 
